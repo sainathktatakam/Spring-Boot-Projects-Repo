@@ -28,7 +28,7 @@ public interface MatchRepository  extends CrudRepository<Match,Long>{
 
     }
 
-    @Query("SELECT m FROM Match m WHERE (m.team1 = teamName OR m.team2 =:teamName) AND m.date between :startDate and :endDate ORDER BY m.date DESC")
+    @Query("SELECT m FROM Match m WHERE (m.team1 = :teamName OR m.team2 =:teamName) AND m.date between :startDate and :endDate ORDER BY m.date DESC")
     public List<Match> getMatchesByTeamBetweenDates(
                     @Param("teamName")String teamName ,
                     @Param("startDate")LocalDate startDate ,
