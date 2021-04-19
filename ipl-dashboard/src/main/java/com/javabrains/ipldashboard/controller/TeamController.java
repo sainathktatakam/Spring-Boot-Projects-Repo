@@ -32,7 +32,7 @@ public class TeamController {
     public Team getTeams(@PathVariable String teamName){
         
           Team team =  this.teamRepository.findByTeamName(teamName);
-            Pageable pageable = PageRequest.of(0, 3);
+            Pageable pageable = PageRequest.of(0, 4);
         List<Match> matchList = this.matchRepository.getByTeam1OrTeam2OrderByDateDesc(
                                                         teamName,
                                                         teamName,

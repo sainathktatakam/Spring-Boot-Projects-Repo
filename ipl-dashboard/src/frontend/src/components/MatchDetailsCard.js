@@ -1,13 +1,19 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
 
-export const MatchDetailsCard = ({ matches }) => {
-    if (!matches) return null;
+export const MatchDetailsCard = ({ teamName ,matche }) => {
+    if (!matche) return null;
+
+    const otherTeam = teamName === matche.team1 ? matche.team2:matche.team1;
+    const otherTeamRoute = `/Team/${otherTeam}`;
 
     return (
         <div className="MatchDetailCard">
             <h3>Latest Match Details</h3>
-            <h4>Match Details</h4>
-            <h4>{matches.team1} VS {matches.team2}</h4>
+            <h1> Vs <Link to={otherTeamRoute}>{otherTeam} </Link> </h1>
+            <h2>{matche.date}</h2>
+            <h3>at {matche.venue}</h3>
+            <h3>{matche.matchWinner} won by {matche.resultMargin} {matche.result}</h3>
         </div>
     );
 }
