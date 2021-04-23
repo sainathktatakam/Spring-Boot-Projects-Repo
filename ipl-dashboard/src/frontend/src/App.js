@@ -1,5 +1,4 @@
-
-import './App.css';
+import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { MatchDetailCard } from './components/MatchDetailsCard';
 import { MatchSmallCard } from './components/MatchSmallCard';
@@ -9,7 +8,6 @@ import { MatchPage } from './pages/MatchPage';
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Switch>
           <Route path='/Team/:teamName/matches/:year'>
