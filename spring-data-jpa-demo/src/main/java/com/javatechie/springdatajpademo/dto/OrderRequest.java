@@ -1,4 +1,4 @@
-package com.javatechie.dto;
+package com.javatechie.springdatajpademo.dto;
 
 import com.javatechie.springdatajpademo.entity.Customer;
 
