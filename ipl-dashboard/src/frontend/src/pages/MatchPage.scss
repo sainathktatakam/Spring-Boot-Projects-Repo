@@ -1,0 +1,23 @@
+.MatchPage{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+    column-gap: 20px;
+    
+    .year-selection{
+        
+        justify-self: end;
+        padding: 20px;
+    }
+
+    .match-page-heading{
+          margin: 20px;
+    }
+
+    .Team-not-played{
+      
+        text-align: 100px;
+        
+    }
+    
+}

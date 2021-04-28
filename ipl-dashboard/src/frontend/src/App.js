@@ -1,7 +1,5 @@
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { MatchDetailCard } from './components/MatchDetailsCard';
-import { MatchSmallCard } from './components/MatchSmallCard';
 import { TeamPage } from './pages/TeamPage';
 import { MatchPage } from './pages/MatchPage';
 
