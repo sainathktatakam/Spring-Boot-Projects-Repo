@@ -1,11 +1,15 @@
 .TeamPage {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
 
-
+    .home-page{
+        padding-top: 20px;
+        grid-column: span 1;
+    }
+   
     .team-name-section {
         grid-column: span 3;
         justify-self: start;
@@ -18,11 +22,11 @@
     }
     .win-lose-section{
         justify-self: center;
-        padding: 10px;
+        padding: 20px;
         text-align: center;
     }
     .match-details-section{
-        grid-column: span 4;
+        grid-column: span 5;
         
     }
     .more{

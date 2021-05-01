@@ -31,10 +31,13 @@ export const TeamPage = () => {
     return (
                 
         <div className="TeamPage">
-           
+           <div className='home-page'>
+                <h2><Link to='/'>Home Page </Link></h2>
+            </div>
             <div className='team-name-section'>
                 <div className='team-name'> <h1>{team.teamName}</h1> </div>
             </div>
+            
             <div className='win-lose-section'>
                 Wins/Losses
                 <PieChart
