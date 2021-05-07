@@ -14,9 +14,9 @@ export const TeamPage = () => {
         () => {
 
             const fetchteam = async () => {
-                const response = await fetch(`http://localhost:8080/Team/${teamName}`);
+                const response = await fetch(`${process.env.REACT_APP_DATA_URL}/Team/${teamName}`);
                 const data = await response.json();
-                console.log(data);
+             //   console.log(data);
                 setTeam(data);
             };
 
